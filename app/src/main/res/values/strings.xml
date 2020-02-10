@@ -16,7 +16,7 @@
     <string name="a_b">A^B</string>
     <string name="T">T</string>
     <string name="F">F</string>
-    <string name="correct">Good</string>
+    <string name="correct">The correct number of answers is: </string>
     <string name="incorrect">Incorrect</string>
     <string name="btnConfirm">Confirm</string>
 </resources>

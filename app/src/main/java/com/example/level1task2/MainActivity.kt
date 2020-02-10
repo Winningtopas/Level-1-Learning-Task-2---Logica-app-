@@ -17,20 +17,45 @@ class MainActivity : AppCompatActivity() {
         btnConfirm.setOnClickListener { checkAnswer() }
     }
 
-    private fun onConfirm(){
-
-    }
-
     private fun checkAnswer() {
+        var random: Int = 1
+        random = (1..2).random()
+        if(random == 1){
+            R.string.A0 == R.string.T
+        }
+        else{
+            R.string.A0 == R.string.F
+        }
+
+        //if(R.string.A0 == R.string.T && R.string.B0 == R.string.T){
+
+        //}
+
+        var correctAmount = 0
         val answer = answer0.text.toString()
+        val answerA = answer1.text.toString()
+        val answerB = answer2.text.toString()
+        val answerC = answer3.text.toString()
 
         // When the answer equals "giraffe" then display a correct message using a toast message.
         // Otherwise display an incorrect message.
+
+
         if (answer == getString(R.string.T)) {
-            Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_LONG).show()
-        } else {
-            Toast.makeText(this, getString(R.string.incorrect), Toast.LENGTH_LONG).show()
+            correctAmount += 1
         }
+        if (answerA == getString(R.string.F)) {
+            correctAmount += 1
+        }
+        if (answerB == getString(R.string.F)) {
+            correctAmount += 1
+        }
+        if (answerC == getString(R.string.F)) {
+            correctAmount += 1
+        }
+
+        Toast.makeText(this, getString(R.string.correct) + " " + correctAmount, Toast.LENGTH_LONG).show()
+
     }
 
 }
