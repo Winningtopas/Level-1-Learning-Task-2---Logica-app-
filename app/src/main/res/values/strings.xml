@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Level1Task2</string>
+    <string name="conjunction_and">Conjunction (AND)</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="A0">T</string>
+    <string name="A1">T</string>
+    <string name="A2">F</string>
+    <string name="A3">F</string>
+
+    <string name="B0">T</string>
+    <string name="B1">F</string>
+    <string name="B2">T</string>
+    <string name="B3">F</string>
+
+    <string name="a_b">A^B</string>
+    <string name="T">T</string>
+    <string name="F">F</string>
+    <string name="correct">Good</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="btnConfirm">Confirm</string>
 </resources>
